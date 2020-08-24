@@ -1,0 +1,33 @@
+h1{
+    font-weight:500;
+    color:white;
+    font-size:4.2rem;
+    
+}
+
+.headerSection{
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.headerNav ul{
+    display:flex;
+}
+.headerNav a {
+    margin:10px;
+    color:white;
+}
+
+header{
+    background-color:#cc90ac;
+    height:100vh;
+}
+
+h2{
+    color:grey;
+    font-size:3.6rem;
+    text-align:center;
+    padding-top:10px;
+    margin:10px;
+}
