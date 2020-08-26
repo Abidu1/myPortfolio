@@ -5,25 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b766fdeb7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
             <div class="headerSection">
-                <div class="name">
-                    <h1>Usra</h1>
+                <div class="headerNavLogo">
+                    <div class="name">
+                        <h1>Usra</h1>
+                    </div>
+                    <div class="headerNav">
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="headerNav">
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="headerContainerTwo">
+                    <div class="headerDescription">
+                        <h3>Hello! My name is <span> Usra Abid </span></h3>
+                        <p>I'm a Front-End Developer</p>
+                    </div>
+                    <div class="imageContainer">
+                        <div>
+                            <img src="./assets/profileImageUsra.jpg" alt="profile picture of myself on a stairwell">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,17 +59,49 @@
                     <div>
                         <h2>Skills</h2>
                     </div>
-                    <div class="skillIcons">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                    <div class="skillList">
+                        <ul>              
+                            <li class="skillIcon">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <p>HTML5</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                <p>CSS3</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-sass" aria-hidden="true"></i>
+                                <p>Sass</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-js" aria-hidden="true"></i>
+                                <p>JavaScript</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <p>React</p>
+                            </li>
+                            <li class="skillIcon">
+                                <img src="./assets/iconfinder_jquery_3069646.png" alt="" class="skills-icon" aria-hidden="true">
+                                <p>jQuery</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-git-alt"aria-hidden="true"></i>
+                                <p>Git</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <p>GitHub</p>
+                            </li>
+                            <li class="skillIcon">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                <p>Responsive</p>
+                            </li>
+                            <li class="skillIcon">
+                                <img src="./assets/icons8-firebase-48.png" alt="" class="skills-icon" aria-hidden="true">
+                                <p>Firebase</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -65,7 +112,7 @@
                     <h2>Latest Works</h2>
                     <div class="projectCollection">
                         <div class="projectContainer">
-                            <img src="" alt="">
+                            <img src="./assets/makeupFinderImage.jpg" alt=" makeup finder app for project 4 ">
                             <div class="projectDescription">
                                 <p>Description of the Project</p>
                                 <button><a href="">View Live</a></button>
@@ -73,7 +120,7 @@
                             </div>
                         </div>
                         <div class="projectContainerTwo">
-                            <img src="" alt="">
+                            <img src="./assets/ofmcImage.jpg" alt="out of context movie for group project">
                             <div class="projectDescription">
                                 <p>Description of the Project</p>
                                 <button><a href="">View Live</a></button>
@@ -81,7 +128,7 @@
                             </div>
                         </div>
                         <div class="projectContainerThree">
-                            <img src="" alt="">
+                            <img src="./assets/pokedexProjectImage.jpg" alt="image of pokedex website where you can look up pokemon">
                             <div class="projectDescription">
                                 <p>Description of the Project</p>
                                 <button><a href="">View Live</a></button>
@@ -89,7 +136,7 @@
                             </div>
                         </div>
                         <div class="projectContainerFour">
-                            <img src="" alt="">
+                            <img src="./assets/waterTrackerImage.jpg" alt="water tracker app for project 3">
                             <div class="projectDescription">
                                 <p>Description of the Project</p>
                                 <button><a href="">View Live</a></button>
@@ -106,7 +153,7 @@
             <div class="wrapper">
                 <div class="contactSection">
                     <form action="abidusra@gmail.com" method="POST">
-                        <legend class="visuallyHidden">Contact Usra</legend>
+                        <legend class="visuallyHidden">Connect with Me</legend>
                         <div class="inputRow">
                             <div class="nameInput">
                                 <label for="name" class="visuallyHidden">Name</label>
@@ -131,9 +178,12 @@
                         </div>
                     </form>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </section>
-        <section>
+        <section class="copyright">
             <p>© 2020, Usra Abid</p>
         </section>
     </footer>

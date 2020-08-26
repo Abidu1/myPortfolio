@@ -1,0 +1,21 @@
+footer{
+    background:#211e26;
+    padding-bottom:280px;
+    color:white;
+}
+
+input, textarea{
+    border-radius: 0px;
+    line-height: 25px;
+    background: transparent;
+    padding: 0px 0px 20px 0px;
+    border: 0px;
+        border-bottom-color: currentcolor;
+        border-bottom-style: none;
+        border-bottom-width: 0px;
+    border-bottom: 1px solid #4d4b51;
+    font-weight: 500;
+    box-shadow: none;
+    color: #7e8288;
+    width: 100%
+}
