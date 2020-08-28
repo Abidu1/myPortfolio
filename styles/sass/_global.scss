@@ -41,7 +41,41 @@ img {
 //global styles
 
 body{
-    font-family: 'Red Hat Display', sans-serif;
+   //  font-family: 'Red Hat Display', sans-serif;
+   font-family: PenguinModern,'ITC Avant Garde Gothic Pro',"Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif
+}
+
+h1{
+   font-weight:700;
+   color:white;
+   font-size:4.2rem;
+   
+}
+
+h2{
+   // color: white;
+   // text-shadow: -5px -5px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   font-size:calc(9rem + 3vw);
+   // font-family: 'Noto Serif', serif;
+   font-family:PenguinModern,'ITC Avant Garde Gothic Pro',"Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+   font-weight:bold;
+   font-style: normal;
+   text-align:center;
+   // padding-top:10px;
+   // margin:10px;
+   // padding-bottom:70px;
+   text-transform: uppercase;
+   // text-shadow: -5px -5px 0 #000, 5px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h3{
+   font-size:3.5rem;
+   // font-family: 'Noto Serif', serif;
+   font-family: PenguinModern,'ITC Avant Garde Gothic Pro',"Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+   font-style: normal;
+   color:white;
+   font-weight:500;
+   // text-transform: uppercase;
 }
 
 

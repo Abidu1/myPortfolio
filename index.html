@@ -6,7 +6,9 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/okp5ggd.css">
     <script src="https://kit.fontawesome.com/2b766fdeb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
             <div class="headerSection">
                 <div class="headerNavLogo">
                     <div class="name">
-                        <h1>Usra</h1>
+                        <h1>Portfolio.</h1>
                     </div>
                     <div class="headerNav">
                         <nav>
@@ -31,13 +33,9 @@
                 </div>
                 <div class="headerContainerTwo">
                     <div class="headerDescription">
-                        <h3>Hello! My name is <span> Usra Abid </span></h3>
+                        <h3>Hello! My name is</h3>
+                        <h4 data-aos= "fade-right" data-aos-duration="300"class="nameTag"> Usra Abid </h4>
                         <p>I'm a Front-End Developer</p>
-                    </div>
-                    <div class="imageContainer">
-                        <div>
-                            <img src="./assets/profileImageUsra.jpg" alt="profile picture of myself on a stairwell">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -47,18 +45,21 @@
         <section id="about" class="aboutMeSection">
             <div class="wrapper">
                 <div class="aboutMeContainer">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos velit, beatae perspiciatis quo magni, neque sint quibusdam architecto eaque iure saepe? Totam molestiae commodi iste illo minima architecto suscipit maxime, cupiditate tempore deserunt non expedita quibusdam perferendis consequuntur veniam vitae repudiandae blanditiis cumque molestias. Eveniet, maxime? Error quasi facilis quas!</p>
+                    <div class="imageContainer">
+                            <img src="./assets/profileImageUsra.jpg" alt="profile picture of myself on a stairwell">
+                    </div>
+                    <div class="aboutMeDescription">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos velit, beatae perspiciatis quo magni, neque sint quibusdam architecto eaque iure saepe? Totam molestiae commodi iste illo minima architecto suscipit maxime, cupiditate tempore deserunt non expedita quibusdam perferendis consequuntur veniam vitae repudiandae blanditiis cumque molestias. Eveniet, maxime? Error quasi facilis quas!</p>
+                    </div>
                 </div>
             </div>
+            <h2>About Me</h2>
         </section>
 
         <section id="skills" class="skillsSection">
             <div class="wrapper">
-                <div class="skillsContainer">
-                    <div>
-                        <h2>Skills</h2>
-                    </div>
+                <div data-aos= "fade-out" data-aos-duration="1500" class="skillsContainer">
+                        
                     <div class="skillList">
                         <ul>              
                             <li class="skillIcon">
@@ -104,41 +105,54 @@
                         </ul>
                     </div>
                 </div>
+                <h2>Skills</h2>
             </div>
         </section>
         <section class="projects">
             <div class="wrapper">
-                <div class="projectSection">
+                <div data-aos= "fade-up" data-aos-duration="1500" class="projectSection">
                     <h2>Latest Works</h2>
                     <div class="projectCollection">
                         <div class="projectContainer">
-                            <img src="./assets/makeupFinderImage.jpg" alt=" makeup finder app for project 4 ">
-                            <div class="projectDescription">
-                                <p>Description of the Project</p>
+                            <div class="projectImage">
+                                <img src="./assets/makeupFinderImage.jpg" alt=" makeup finder app for project 4 ">
+                            </div>
+                            <div class="projectDescriptionOdd">
+                                <p>Makeup Finder</p>
+                                <p>Users can browse through and buy different products using a drop-down menu of makeup categories where they can choose between lip, eyeshadow and blush </p>
                                 <button><a href="">View Live</a></button>
                                 <button><a href="">View GitHub</a></button>
                             </div>
                         </div>
                         <div class="projectContainer">
-                            <img src="./assets/ofmcImage.jpg" alt="out of context movie for group project">
-                            <div class="projectDescription">
-                                <p>Description of the Project</p>
+                            <div class="projectImage">
+                                <img src="./assets/ofmcImage.jpg" alt="out of context movie for group project">
+                            </div>
+                            <div class="projectDescriptionEven">
+                                <p>Out of Context Movie Spoiler</p>
+                                <p>This site is designed to help users finds gifs of their favourite movie using the search bar and saving it to their highlight reel</p>
                                 <button><a href="">View Live</a></button>
                                 <button><a href="">View GitHub</a></button>
                             </div>
                         </div>
                         <div class="projectContainer">
-                            <img src="./assets/pokedexProjectImage.jpg" alt="image of pokedex website where you can look up pokemon">
-                            <div class="projectDescription">
-                                <p>Description of the Project</p>
+                            <div class="projectImage">
+                                <img src="./assets/pokedexProjectImage.jpg" alt="image of pokedex website where you can look up pokemon">
+                            </div>
+                            <div class="projectDescriptionOdd">
+                                <p>Pokedex</p>
+                                <p>You can find information about a pokemon by looking up the name of the pokemon on the search engine </p>
                                 <button><a href="">View Live</a></button>
                                 <button><a href="">View GitHub</a></button>
                             </div>
                         </div>
                         <div class="projectContainer">
-                            <img src="./assets/waterTrackerImage.jpg" alt="water tracker app for project 3">
-                            <div class="projectDescription">
-                                <p>Description of the Project</p>
+                            <div class="projectImage">
+                                <img src="./assets/waterTrackerImage.jpg" alt="water tracker app for project 3">
+                            </div>
+                            <div class="projectDescriptionEven">
+                                <p> Drinking Water Tracker</p>
+                                <p>Calculates how much water you need to drink today depending on your weight and how many minutes you excerise for</p>
                                 <button><a href="">View Live</a></button>
                                 <button><a href="">View GitHub</a></button>
                             </div>
@@ -154,7 +168,7 @@
                 <h2>Contact Me</h2>
                 <div class="contactForm">
                     <div class="socials">
-                        <p>Thanks for stopping by! If you're interested in working with me or knowing more about my work, feel free to contact me! </p>
+                        <p>Thanks for stopping by! If you're interested in working with me or knowing more about my projects, feel free to contact me! </p>
                         <ul>
                             <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
                             <li><i class="fab fa-linkedin-in" aria-hidden="true"></i></li>
@@ -176,7 +190,7 @@
                             </div>
                         </div>
 
-                        <div class="messageInput">
+                        <div  class="messageInput">
                             <!-- <label for="textarea" class="visuallyHidden">Message</label> -->
                             <textarea name="message" id="textarea" cols="30" rows="7"
                                 placeholder="Message"></textarea>
@@ -197,6 +211,12 @@
             <p>© 2020, Usra Abid</p>
         </section>
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="./scripts.js"></script> 
+
 </body>
 </html>

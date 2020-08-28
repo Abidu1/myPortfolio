@@ -1,9 +1,4 @@
-h1{
-    font-weight:500;
-    color:white;
-    font-size:4.2rem;
-    
-}
+
 
 .headerSection{
     padding-top:50px;
@@ -12,6 +7,7 @@ h1{
 .headerNavLogo{
     display:flex;
     justify-content: space-between;
+    // position:fixed;
 }
 
 .headerNav ul{
@@ -20,44 +16,39 @@ h1{
 .headerNav a {
     margin:10px;
     color:white;
+    font-size:calc(0.5rem + 1vw);
+    border-bottom: 5px solid white;
+    border-spacing: 5px;
 }
 
 
 header{
-    background-color:#d9a7a7;
+    background-image:url(/assets/backgroundHeader.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     height:100vh;
+    background-color:#d9a7a7;
 }
 
-h2{
-    color:#211e26;
-    font-size:5.2rem;
-    font-family: 'Noto Serif', serif;
-    font-weight:500;
-    text-align:center;
-    padding-top:10px;
-    margin:10px;
-    padding-bottom:70px;
-}
 
-h3{
-    font-size:3.5rem;
-    font-family: 'Noto Serif', serif;
-    color:white;
-    font-weight:300;
-}
 
 .headerDescription{
-    margin-top:250px;
+    margin-top:150px;
 }
 
-span{
-    text-decoration: bold;
-    font-style:italic;
+.headerDescription h3{
+    position:relative;
+    top:200px;
 }
+
+
 
 .headerContainerTwo{
     display:flex;
 }
+
+
 
 .headerContainerTwo img{
     margin-left:100px;
@@ -70,6 +61,63 @@ span{
 .headerDescription p{
     font-size:2.3rem;
     color:white;
+    position:relative;
+    top:-200px;
 }
 
+.nameTag{
+    text-decoration: bold;
+    font-weight:700;
+    font-size:calc(14rem + 1vw);
+    margin-right:10px;
+    text-transform: uppercase;
+    color:#d9a7a7;
+    // animation: typewriter 10s linear;
+    text-shadow: -5px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+
+}
+
+
+@keyframes typewriter{
+    0%{
+        background:#d9a7a7;
+    }
+
+    100%{
+        background:black;
+    }
+}
+
+@media(max-width:500px){
+
+    .headerNavLogo{
+        flex-direction: column;
+    }
+
+    // .headerNavLogo ul{
+    //     flex-direction: column;
+    // }
+    header h1{
+        font-size:3.4rem;
+    }
+
+
+}
+
+@media(max-width:360px){
+    .nameTag{
+        font-size:12rem
+    }
+
+    .headerDescription p{
+        top:-150px;
+    }
+
+    .headerDescription h3{
+        font-size:3.3rem;
+        top:150px;
+    }
+
+
+}
 
